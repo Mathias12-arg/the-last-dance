@@ -336,7 +336,7 @@
                     index++;
                     
                     // CONFIGURACIÓN REAL AJUSTADA (Compensando el lag del navegador)
-                    let pausa = 46; 
+                    let pausa = 50; 
                     if (textoCompleto.charAt(index-1) === '.') pausa = 500;
                     else if (textoCompleto.charAt(index-1) === ',') pausa = 250;
                     else if (textoCompleto.charAt(index-1) === ';') pausa = 350;
@@ -345,7 +345,7 @@
                     setTimeout(escribir, pausa);
                 } else {
                     document.getElementById('cursorBlink').style.display = 'none';
-                    setTimeout(mostrarModalFinal, 4000);
+                    setTimeout(mostrarModalFinal, 14000);
                 }
             }
             escribir();
